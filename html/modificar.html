@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title> "Modificar registro"</title>
+    <!-- Llamada a compomente de menu -->
+  <script type="module" src="../components/bmenu.js"></script>
+    <barra-menu></barra-menu>
+<body>
+    <!--FORMULARIO PERSONAS -->
+    <form action="../php/modify.php" method="POST">
+        <H1>Datos de Estudiante</H1>
+        <br>
+        <fieldset>
+        <br>
+            <legend>Informacion personal</legend>
+            <p><label>ID a modificar: <input type="text" name="id" autocomplete="off" placeholder="Ingrese ID" required></label></p>     
+        </fieldset>
+        <fieldset>
+          <legend>Campo a modificar</legend>
+          <div>
+           <input type="radio" id="campo" name="campo" value="nombre" checked required>
+           <label for="campo">Nombre</label>
+          </div>
+          <div>
+            <input type="radio" id="campo" name="campo" value="grado">
+            <label for="campo">Grado</label>
+           </div>
+           <div>
+            <input type="radio" id="campo" name="campo" value="seccion">
+            <label for="campo">Seccion</label>
+           </div>
+           <div>
+            <input type="radio" id="campo" name="campo" value="asignatura">
+            <label for="campo">Asignatura</label>
+           </div>
+        </fieldset>
+        <fieldset>
+          <legend>Valor nuevo</legend>
+          <p><label>Valor nuevo: <input type="text" name="nuevo" autocomplete="off" placeholder="Ingrese ID" required></label></p>     
+        </fieldset>
+        <input type="submit" name="enviar"value="Enviar">      
+</form>
+
+  </body>
+
+</html>

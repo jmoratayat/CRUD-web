@@ -8,6 +8,7 @@ class BarraMenu extends HTMLElement {
       <li><a href="../php/read.php">Ver registros</a></li>
       <li><a href="../html/agregar.html">Ingresar nuevo</a></li>
       <li><a href="../html/eliminar.html">Eliminar</a></li>
+      <li><a href="../html/modificar.html">Modificar</a></li>
     </ul>`;
   }
 }
