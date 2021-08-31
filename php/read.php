@@ -8,7 +8,7 @@
         <p></p>
         <label for="codigo"><b>Codigo a buscar</b></label>
         <input type="number" placeholder="Ingrese el Codigo" name="codigo" required>
-        <button type="submit">Buscar</button>
+        <button type="submit" class="w3-button w3-black w3-padding-large w3-margin-bottom">Buscar</button>
     </div>
     <div class="container" style="background-color:#f1f1f1">
     </div>
