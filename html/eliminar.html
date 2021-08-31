@@ -15,9 +15,16 @@
             <legend>Informacion personal</legend>
             <p><label>ID a eliminar: <input type="number" name="id" autocomplete="off" placeholder="Ingrese ID" required></label></p>     
         </fieldset>
-        <input type="submit" name="enviar"value="Enviar" class="w3-button w3-black w3-padding-large w3-margin-bottom">      
+        <input type="submit" onclick="clicked(event)" class="w3-button w3-black w3-padding-large w3-margin-bottom">      
 </form>
-
+<script>
+  function clicked(e)
+  {
+      if(!confirm('Esta seguro que desea eliminar?')) {
+          e.preventDefault();
+      }
+  }
+  </script>
   </body>
 
 </html>

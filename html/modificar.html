@@ -39,9 +39,16 @@
           <legend>Valor nuevo</legend>
           <p><label>Valor nuevo: <input type="text" name="nuevo" autocomplete="off" required ></label></p>     
         </fieldset>
-        <input type="submit" name="enviar"value="Enviar" class="w3-button w3-black w3-padding-large w3-margin-bottom">      
+        <input type="submit" onclick="clicked(event)" class="w3-button w3-black w3-padding-large w3-margin-bottom">    
 </form>
-
+<script>
+  function clicked(e)
+  {
+      if(!confirm('Confirmar cambios?')) {
+          e.preventDefault();
+      }
+  }
+  </script>
   </body>
 
 </html>
