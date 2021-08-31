@@ -3,9 +3,27 @@
     <script type="module" src="../components/bmenu.js"></script>
     <barra-menu></barra-menu>
 </head>
+<form method="POST" action="<?= $_SERVER['PHP_SELF']; ?>">
+    <div class="container">
+        <p></p>
+        <label for="codigo"><b>Codigo a buscar</b></label>
+        <input type="number" placeholder="Ingrese el Codigo" name="codigo" required>
+        <button type="submit">Buscar</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+</form>
 <?php
 require_once '../php/conexion.php';
-$sql = "SELECT * FROM parcial";
+$codigo = 0;
+error_reporting(0);
+$codigo = $_POST["codigo"];
+if ($codigo > 0) {
+    $sql = "SELECT * FROM parcial WHERE id='$codigo'";
+} else {
+    $sql = "SELECT * FROM parcial";
+}
+
 $result = mysqli_query($conn, $sql);
 echo "
         <style>
