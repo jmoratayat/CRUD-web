@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title> "Eliminar registro"</title>
+    <!-- Llamada a compomente de menu -->
+  <script type="module" src="../components/bmenu.js"></script>
+    <barra-menu></barra-menu>
+<body>
+    <!--FORMULARIO PERSONAS -->
+    <form action="../php/delete.php" method="POST">
+        <H1>Datos de Personas</H1>
+        <br>
+        <fieldset>
+        <br>
+            <legend>Informacion personal</legend>
+            <p><label>ID a eliminar: <input type="text" name="ID" autocomplete="off" placeholder="Ingrese ID" required></label></p>     
+        </fieldset>
+        <input type="submit" name="enviar"value="Enviar">      
+</form>
+
+  </body>
+
+</html>

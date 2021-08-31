@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title> "Agregar registro"</title>
+    <!-- Llamada a compomente de menu -->
+  <script type="module" src="../components/bmenu.js"></script>
+    <barra-menu></barra-menu>
+<body>
+    <!--FORMULARIO PERSONAS -->
+    <form action="../php/insert.php" method="POST">
+        <H1>Datos de Personas</H1>
+        <br>
+        <fieldset>
+        <br>
+            <legend>Informacion personal</legend>
+            <p><label>Nombre: <input type="text" name="nombre" autocomplete="off" placeholder="Ingrese su nombre"></label></p>
+            <p><label>grado: <input type="text" name="grado" autocomplete="off" placeholder="Ingrese su grado"></label></p>
+            <p><label>seccion: <input type="text" name="seccion" autocomplete="off" placeholder="Ingrese su seccion"></label></p>
+            <p><label>asignatura: <input type="text" name="asignatura" autocomplete="off" placeholder="Ingrese su asignatura"></label></p>             
+        </fieldset>
+        <input type="submit" name="enviar"value="Enviar">      
+</form>
+
+  </body>
+
+</html>
